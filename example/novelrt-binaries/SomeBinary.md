@@ -1,0 +1,1 @@
+NovelRT binaries (such as `Engine.dll` and other dependencies) are located in this folder.

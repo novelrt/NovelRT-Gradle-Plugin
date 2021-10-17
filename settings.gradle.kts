@@ -2,11 +2,10 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         mavenCentral()
-        jcenter()
     }
 }
 
-rootProject.name = ("kotlin-gradle-plugin-template")
+rootProject.name = ("novelrt-plugin")
 
 include(":example")
 includeBuild("plugin-build")

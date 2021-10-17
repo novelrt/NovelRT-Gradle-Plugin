@@ -1,8 +1,11 @@
 plugins {
-    java
-    id("com.ncorti.kotlin.gradle.template.plugin")
+    id("novelrt-plugin")
 }
 
-templateExampleConfig {
-    message.set("Just trying this gradle plugin...")
+application {
+    mainModule.set("dev.novelrt.examplemodule")
+}
+
+novelrt {
+    binariesLocation.set(project.projectDir.resolve("novelrt-binaries"))
 }
