@@ -6,8 +6,8 @@ object PluginCoordinates {
 }
 
 object PluginBundle {
-    const val VCS = "https://github.com/novelrt/novelrt-plugin"
-    const val WEBSITE = "https://github.com/novelrt/novelrt-plugin"
+    const val VCS = "https://github.com/novelrt/NovelRT-Gradle-Plugin"
+    const val WEBSITE = "https://github.com/novelrt/NovelRT-Gradle-Plugin"
     const val DESCRIPTION = "A Gradle plugin to use NovelRT."
     const val DISPLAY_NAME = "NovelRT Gradle Plugin"
     val TAGS = listOf(
