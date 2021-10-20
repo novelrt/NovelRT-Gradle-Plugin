@@ -1,3 +1,6 @@
+// Copyright © Matt Jones and Contributors. Licensed under the MIT Licence (MIT). See LICENCE.md in the repository root
+// for more information.
+
 package dev.novelrt.gradle
 
 import org.gradle.api.Project
@@ -7,7 +10,6 @@ import org.gradle.api.provider.Property
 import org.gradle.api.tasks.SourceSetContainer
 import javax.inject.Inject
 
-@Suppress("UnnecessaryAbstractClass")
 abstract class NovelRTExtension @Inject constructor(project: Project) {
     private val objects = project.objects
 

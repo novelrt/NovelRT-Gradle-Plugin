@@ -1,3 +1,6 @@
+// Copyright © Matt Jones and Contributors. Licensed under the MIT Licence (MIT). See LICENCE.md in the repository root
+// for more information.
+
 object PluginCoordinates {
     const val ID = "novelrt-plugin"
     const val GROUP = "dev.novelrt"

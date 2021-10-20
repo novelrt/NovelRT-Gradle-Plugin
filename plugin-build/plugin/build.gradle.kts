@@ -1,3 +1,6 @@
+// Copyright © Matt Jones and Contributors. Licensed under the MIT Licence (MIT). See LICENCE.md in the repository root
+// for more information.
+
 plugins {
     kotlin("jvm")
     id("java-gradle-plugin")
@@ -5,7 +8,7 @@ plugins {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk7"))
+    implementation(kotlin("stdlib-jdk8"))
     implementation(gradleApi())
 
     testImplementation(TestingLib.JUNIT)
