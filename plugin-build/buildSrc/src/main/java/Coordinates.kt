@@ -2,7 +2,7 @@
 // for more information.
 
 object PluginCoordinates {
-    const val ID = "novelrt-plugin"
+    const val ID = "dev.novelrt.novelrt-plugin"
     const val GROUP = "dev.novelrt"
     const val VERSION = "0.1.0"
     const val IMPLEMENTATION_CLASS = "dev.novelrt.gradle.NovelRTPlugin"

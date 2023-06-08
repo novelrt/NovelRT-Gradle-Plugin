@@ -8,6 +8,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = ("dev.novelrt")
-
-include(":plugin")
+include("novelrt-plugin")
+project(":novelrt-plugin").projectDir = file("plugin")

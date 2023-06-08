@@ -2,7 +2,8 @@
 // for more information.
 
 plugins {
-    id("novelrt-plugin")
+    id("dev.novelrt.novelrt-plugin")
+    application
 }
 
 application {
@@ -10,5 +11,8 @@ application {
 }
 
 novelrt {
-    binariesLocation.set(project.projectDir.resolve("novelrt-binaries"))
+    sdk {
+        binariesDir.set(project.projectDir.resolve("novelrt-binaries"))
+        engineResourcesDir.set(project.projectDir.resolve("novelrt-resources"))
+    }
 }

@@ -10,13 +10,13 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(gradleApi())
+    compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21")
 
     testImplementation(TestingLib.JUNIT)
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+kotlin {
+    jvmToolchain(17)
 }
 
 gradlePlugin {
@@ -30,24 +30,24 @@ gradlePlugin {
 }
 
 // Configuration Block for the Plugin Marker artifact on Plugin Central
-pluginBundle {
-    website = PluginBundle.WEBSITE
-    vcsUrl = PluginBundle.VCS
-    description = PluginBundle.DESCRIPTION
-    tags = PluginBundle.TAGS
-
-    plugins {
-        getByName(PluginCoordinates.ID) {
-            displayName = PluginBundle.DISPLAY_NAME
-        }
-    }
-
-    mavenCoordinates {
-        groupId = PluginCoordinates.GROUP
-        artifactId = PluginCoordinates.ID
-        version = PluginCoordinates.VERSION
-    }
-}
+//pluginBundle {
+//    website = PluginBundle.WEBSITE
+//    vcsUrl = PluginBundle.VCS
+//    description = PluginBundle.DESCRIPTION
+//    tags = PluginBundle.TAGS
+//
+//    plugins {
+//        getByName(PluginCoordinates.ID) {
+//            displayName = PluginBundle.DISPLAY_NAME
+//        }
+//    }
+//
+//    mavenCoordinates {
+//        groupId = PluginCoordinates.GROUP
+//        artifactId = PluginCoordinates.ID
+//        version = PluginCoordinates.VERSION
+//    }
+//}
 
 tasks.create("setupPluginUploadFromEnvironment") {
     doLast {
