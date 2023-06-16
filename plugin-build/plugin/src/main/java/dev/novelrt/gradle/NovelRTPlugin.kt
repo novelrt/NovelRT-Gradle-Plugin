@@ -94,9 +94,7 @@ abstract class NovelRTPlugin : Plugin<Project> {
         }
 
         project.tasks.named("assemble").configure {
-            if (novelExt.runCombineResourcesTask.get()) {
-                it.dependsOn("combineResources")
-            }
+            it.dependsOn("combineResources")
         }
     }
 
